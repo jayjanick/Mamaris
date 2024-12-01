@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    color: #fff;
+    background-image: url(cake.png);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    min-height: 100vh; /* Asegura que el contenedor tiene suficiente altura */
+}
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter p{
+    font-family: monospace;
+    font-size: 2rem;
+    white-space: nowrap;
+    animation: typing .9s steps(7) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.text{
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    overflow-y: auto; /* Añade desplazamiento vertical si es necesario */
+    max-height: 90vh; /* Asegura que el texto no sobresale de la ventana */
+}
+
+@media screen and (max-width: 340px){
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 340px){
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 576px){
+    body{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    body{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+body::-webkit-scrollbar{
+    width: 0%;
+}
+
+.text::-webkit-scrollbar{
+    width: 0%;
+}
